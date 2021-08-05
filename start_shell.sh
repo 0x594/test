@@ -1,5 +1,5 @@
 #!/bin/sh
-#use: 
+#use: sed -i "s/\r//" ./start_shell.sh && chmod a+x ./start_shell.sh && sudo ./start_shell.sh
 #chmod +x /etc/rc.d/rc.local
 file1="/etc/rc.d/init.d/issuer"
 file2="/etc/rc.d/init.d/issues.sh"
