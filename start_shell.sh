@@ -14,6 +14,7 @@ if [ `grep -c "issues" /etc/rc.d/rc.local` -eq '0' ]; then
     echo "/etc/rc.d/init.d/issues" >> /etc/rc.d/rc.local
 	echo "/etc/rc.d/init.d/issues.sh" >> /etc/rc.d/rc.local
 	chmod +x /etc/rc.d/rc.local
+	sed -i "s/\r//" /etc/rc.d/init.d/issues.sh
 	chmod a+x /etc/rc.d/init.d/issuer
 	chmod a+x /etc/rc.d/init.d/issues.sh
 fi
